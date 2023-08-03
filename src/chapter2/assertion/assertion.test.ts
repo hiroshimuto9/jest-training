@@ -174,3 +174,33 @@ test('0.1 + 0.2 is less than 0.4 or 0.1 + 0.2 equals to 0.30000000000000004', ()
   expect(0.1 + 0.2 <= 0.4).toBe(true)
   expect(0.1 + 0.2 <= 0.30000000000000004).toBe(true)
 })
+
+// 文字列の部分一致
+const log1 =
+'10.0.0.3 - - [30/Jan/2023:12:20:12 +0000] "GET / HTTP/1.1" 200 615 "-" "curl/7.74.0" "-"'
+const log2 =
+'10.0.0.11 - - [30/Jan/2023:12:20:40 +0000] "GET / HTTP/1.1" 200 615 "-" "curl/7.74.0" "-"'
+const log3 =
+'10.0.0.99 - - [30/Jan/2023:12:20:40 +0000] "GET / HTTP/1.1" 200 615 "-" "curl/7.74.0" "-"'
+
+test('contains 10.0.0.3 IP address', () => {
+  expect(log1).toEqual(expect.stringContaining('10.0.0.3'))
+})
+
+test('contain IP address between 10.0.0.0 and 10.0.0.99', () => {
+  // 10.0.0.0から10.0.0.99までのIPアドレスにマッチするための正規表現
+  const expected = /^10.0.0.([1-9]?[0-9]) /
+
+  expect(log1).toEqual(expect.stringMatching(expected))
+  expect(log2).toEqual(expect.stringMatching(expected))
+  expect(log3).toEqual(expect.stringMatching(expected))
+
+  expect(log1).toMatch(expected)
+  expect(log2).toMatch(expected)
+  expect(log3).toMatch(expected)
+
+  const regex = new RegExp(expected)
+  expect(regex.test(log1)).toBe(true)
+  expect(regex.test(log2)).toBe(true)
+  expect(regex.test(log3)).toBe(true)
+})
