@@ -204,3 +204,70 @@ test('contain IP address between 10.0.0.0 and 10.0.0.99', () => {
   expect(regex.test(log2)).toBe(true)
   expect(regex.test(log3)).toBe(true)
 })
+
+// 配列の要素がプリミティブ型の場合
+const fruitList = ['Apple', 'Lemon', 'Orange']
+
+// 1つの要素が含まれていることを検証
+test('contains Apple in fruitList', () => {
+  expect(fruitList).toContain('Apple') 
+})
+
+// 複数の要素が含まれていることを検証
+test('contains Apple and Orange in fruitList', () => {
+  expect(fruitList).toEqual(expect.arrayContaining(['Apple', 'Orange']))
+})
+
+// 配列の要素がオブジェクト型の場合
+const itemList = [
+  { name: 'Apple', price: 100 },
+  { name: 'Lemon', price: 150 },
+  { name: 'Orange', price: 120 },
+]
+
+// 1つの要素が含まれていることを検証
+test('contains Apple in itemList', () => {
+  expect(itemList).toContainEqual({ name: 'Apple', price: 100 }) 
+})
+
+// 複数の要素が含まれていることを検証
+test('contains Apple and Orange in itemList', () => {
+  expect(itemList).toEqual(
+    expect.arrayContaining([
+      { name: 'Apple', price: 100 },
+      { name: 'Orange', price: 120 },
+    ]),
+  )
+})
+
+// オブジェクトの部分一致
+const ciBuild = { number: 1,
+  duration: 12000, state: 'success',
+  triggerParameters: {
+    is_scheduled: true,
+  },
+  type: 'scheduled_pipeline',
+  actor: {
+    login: 'Taka',
+  },
+}
+
+// 1つのプロパティを評価
+test('build state should be Taka', () => {
+  expect(ciBuild).toHaveProperty('state', 'success')
+})
+
+// ネストしたプロパティを評価
+test('actor should be Taka', () => {
+  expect(ciBuild).toHaveProperty('actor.login', 'Taka')
+})
+
+// 複数のプロパティを評価
+test('triggered by the scheduled pipeline', () => {
+  expect(ciBuild).toEqual(
+    expect.objectContaining({
+      triggerParameters: expect.objectContaining({ is_scheduled: true }),
+      type: 'scheduled_pipeline',
+    }),
+  )
+})
