@@ -97,3 +97,47 @@ test('differences between toEqual and toStrictEqual', () => {
   // toStrictEqual:未定義の要素とundefinedの要素を区別するので、等しくないと評価
   expect([, undefined, 1]).not.toStrictEqual([undefined, , 1])
 })
+
+// TruthyとFalsyの評価
+test('"0" should be Truthy', () => {
+  expect("0").toBeTruthy()
+})
+
+test('0 should be Falsy', () => {
+  expect(0).toBeFalsy()
+})
+
+// nullとundefinedの評価
+test('should be null', () => {
+  expect(null).toBe(null)
+  expect(null).toBeNull()
+})
+
+test('should be undefined', () => {
+  expect(undefined).toBe(undefined)
+  expect(undefined).toBeUndefined()
+})
+
+test('should be null or undefined', () => {
+  let a // undefined
+  expect(a == null).toBe(true)
+  a = null // null
+  expect(a == null).toBe(true)
+})
+
+const hoge = () => ({ hoge: 'hoge', number: 0})
+
+test('hoge return anything', () => {
+  // 期待値がnullやundefinedでないことを評価
+  expect(hoge()).toEqual(expect.anything())
+  // 期待値の一部のプロパティがnullやundefinedでないことを評価
+  expect(hoge()).toEqual({
+    hoge: 'hoge',
+    number: expect.anything()
+  })
+  // 期待値の一部のプロパティnumberがNumber型であることを評価
+  expect(hoge()).toEqual({
+    hoge: 'hoge',
+    number: expect.any(Number)
+  })
+})
