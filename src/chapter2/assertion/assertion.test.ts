@@ -141,3 +141,36 @@ test('hoge return anything', () => {
     number: expect.any(Number)
   })
 })
+
+// 浮動小数点の誤差を許容したテスト
+test('0.1 + 0.2 return 0.3', () => {
+  expect(0.1+0.2).toBeCloseTo(0.3);
+})
+
+test('0.301 and 0.3 are different when numDigest is 3', () => {
+  expect(0.3 + 0.001).not.toBeCloseTo(0.3, 3) // 小数点以下3桁目まで評価する場合、0.3と0.301は等しくないと評価する
+})
+
+// toBeGreaterThan
+test('0.1 + 0.2 is greater than 0.3', () => {
+  expect(0.1 + 0.2).toBeGreaterThan(0.3)
+  expect(0.1 + 0.2 > 0.3).toBe(true) })
+  // toBeGreaterThanOrEqual
+  test('0.1 + 0.2 is greater than 0.3 or 0.1 + 0.2 equals to 0.30000000000000004', () => {
+  expect(0.1 + 0.2).toBeGreaterThanOrEqual(0.3)
+  expect(0.1 + 0.2).toBeGreaterThanOrEqual(0.30000000000000004)
+  expect(0.1 + 0.2 >= 0.3).toBe(true)
+  expect(0.1 + 0.2 >= 0.30000000000000004).toBe(true)
+})
+// toBeLessThan
+test('0.1+0.2 is less than 0.4', () => { 
+  expect(0.1 + 0.2).toBeLessThan(0.4)
+  expect(0.1 + 0.2 < 0.4).toBe(true)
+})
+// toBeLessThanOrEqual
+test('0.1 + 0.2 is less than 0.4 or 0.1 + 0.2 equals to 0.30000000000000004', () => {
+  expect(0.1 + 0.2).toBeLessThanOrEqual(0.4)
+  expect(0.1 + 0.2).toBeLessThanOrEqual(0.30000000000000004)
+  expect(0.1 + 0.2 <= 0.4).toBe(true)
+  expect(0.1 + 0.2 <= 0.30000000000000004).toBe(true)
+})
