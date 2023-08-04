@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './button.css'
 
 interface ButtonProps {
   primary?: boolean
