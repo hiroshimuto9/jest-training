@@ -22,6 +22,8 @@ jobs: # ジョブの設定を追加
             echo $TEST_FILES npm test -- $TEST_FILES
       - store_test_results: # テスト結果をアップロード
           path: reports/jest
+      - store_artifacts: # カバレッジをアップロード
+          path: reports/coverage
 workflows: # ワークフローの設定を追加
   test:
     jobs:

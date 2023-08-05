@@ -1,57 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="165" failures="0" errors="0" time="10.583">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2023-08-05T13:33:38" time="3.265" tests="1">
-    <testcase classname=" 1+2 equals 3" name=" 1+2 equals 3" time="0.009">
-    </testcase>
-  </testsuite>
-  <testsuite name="Math.random with spyOn" errors="0" failures="0" skipped="0" timestamp="2023-08-05T13:33:38" time="4.117" tests="2">
-    <testcase classname="Math.random with spyOn Math.random return 1" name="Math.random with spyOn Math.random return 1" time="0.008">
+<testsuites name="jest tests" tests="165" failures="0" errors="0" time="10.642">
+  <testsuite name="Math.random with spyOn" errors="0" failures="0" skipped="0" timestamp="2023-08-05T14:37:28" time="4.262" tests="2">
+    <testcase classname="Math.random with spyOn Math.random return 1" name="Math.random with spyOn Math.random return 1" time="0.015">
     </testcase>
     <testcase classname="Math.random with spyOn Math.random return under 1" name="Math.random with spyOn Math.random return under 1" time="0">
     </testcase>
   </testsuite>
-  <testsuite name="#reset mocks with jest.fn" errors="0" failures="0" skipped="0" timestamp="2023-08-05T13:33:38" time="4.226" tests="3">
-    <testcase classname="#reset mocks with jest.fn jest.clearAllMocks" name="#reset mocks with jest.fn jest.clearAllMocks" time="0.008">
+  <testsuite name="グループ名" errors="0" failures="0" skipped="100" timestamp="2023-08-05T14:37:28" time="4.277" tests="116">
+    <testcase classname="グループ名 test1" name="グループ名 test1" time="0.008">
     </testcase>
-    <testcase classname="#reset mocks with jest.fn jest.resetAllMocks" name="#reset mocks with jest.fn jest.resetAllMocks" time="0">
-    </testcase>
-    <testcase classname="#reset mocks with jest.fn jest.restoreAllMocks" name="#reset mocks with jest.fn jest.restoreAllMocks" time="0.001">
-    </testcase>
-  </testsuite>
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2023-08-05T13:33:38" time="4.276" tests="1">
-    <testcase classname=" should fetch all users" name=" should fetch all users" time="0.004">
-    </testcase>
-  </testsuite>
-  <testsuite name="グループ名" errors="0" failures="0" skipped="100" timestamp="2023-08-05T13:33:38" time="4.314" tests="116">
-    <testcase classname="グループ名 test1" name="グループ名 test1" time="0.005">
-    </testcase>
-    <testcase classname="グループ名 test2" name="グループ名 test2" time="0">
+    <testcase classname="グループ名 test2" name="グループ名 test2" time="0.001">
     </testcase>
     <testcase classname="グループ名 test3" name="グループ名 test3" time="0">
     </testcase>
-    <testcase classname="グループ名 入れ子グループ名 test4" name="グループ名 入れ子グループ名 test4" time="0">
+    <testcase classname="グループ名 入れ子グループ名 test4" name="グループ名 入れ子グループ名 test4" time="0.001">
     </testcase>
-    <testcase classname="test eachの利用 .add(1, 1)" name="test eachの利用 .add(1, 1)" time="0.001">
+    <testcase classname="test eachの利用 .add(1, 1)" name="test eachの利用 .add(1, 1)" time="0">
     </testcase>
-    <testcase classname="test eachの利用 .add(1, 2)" name="test eachの利用 .add(1, 2)" time="0">
+    <testcase classname="test eachの利用 .add(1, 2)" name="test eachの利用 .add(1, 2)" time="0.001">
     </testcase>
-    <testcase classname="test eachの利用 .add(2, 1)" name="test eachの利用 .add(2, 1)" time="0">
+    <testcase classname="test eachの利用 .add(2, 1)" name="test eachの利用 .add(2, 1)" time="0.002">
     </testcase>
     <testcase classname="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 100" name="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 100" time="0">
     </testcase>
     <testcase classname="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 99" name="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 99" time="0">
     </testcase>
-    <testcase classname="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 1" name="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 1" time="0.001">
+    <testcase classname="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 1" name="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 1" time="0">
     </testcase>
     <testcase classname="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 0.1" name="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 0.1" time="0">
     </testcase>
-    <testcase classname="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 0" name="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 0" time="0">
+    <testcase classname="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 0" name="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 0" time="0.001">
     </testcase>
     <testcase classname="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to -1" name="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to -1" time="0">
     </testcase>
-    <testcase classname="before/after timing test group1" name="before/after timing test group1" time="0">
+    <testcase classname="before/after timing test group1" name="before/after timing test group1" time="0.003">
     </testcase>
-    <testcase classname="before/after timing Scoped/Nested block test group2" name="before/after timing Scoped/Nested block test group2" time="0">
+    <testcase classname="before/after timing Scoped/Nested block test group2" name="before/after timing Scoped/Nested block test group2" time="0.002">
     </testcase>
     <testcase classname="before/after timing Scoped/Nested block test group2" name="before/after timing Scoped/Nested block test group2" time="0.001">
     </testcase>
@@ -356,8 +340,24 @@
       <skipped/>
     </testcase>
   </testsuite>
-  <testsuite name="jest fn()" errors="0" failures="0" skipped="0" timestamp="2023-08-05T13:33:38" time="4.334" tests="5">
-    <testcase classname="jest fn() mock object specification" name="jest fn() mock object specification" time="0.005">
+  <testsuite name="#reset mocks with jest.fn" errors="0" failures="0" skipped="0" timestamp="2023-08-05T14:37:28" time="4.415" tests="3">
+    <testcase classname="#reset mocks with jest.fn jest.clearAllMocks" name="#reset mocks with jest.fn jest.clearAllMocks" time="0.005">
+    </testcase>
+    <testcase classname="#reset mocks with jest.fn jest.resetAllMocks" name="#reset mocks with jest.fn jest.resetAllMocks" time="0.001">
+    </testcase>
+    <testcase classname="#reset mocks with jest.fn jest.restoreAllMocks" name="#reset mocks with jest.fn jest.restoreAllMocks" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2023-08-05T14:37:28" time="4.473" tests="1">
+    <testcase classname=" 1+2 equals 3" name=" 1+2 equals 3" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2023-08-05T14:37:28" time="4.483" tests="1">
+    <testcase classname=" should fetch all users" name=" should fetch all users" time="0.006">
+    </testcase>
+  </testsuite>
+  <testsuite name="jest fn()" errors="0" failures="0" skipped="0" timestamp="2023-08-05T14:37:28" time="4.525" tests="5">
+    <testcase classname="jest fn() mock object specification" name="jest fn() mock object specification" time="0.008">
     </testcase>
     <testcase classname=" return &quot;Hello&quot;" name=" return &quot;Hello&quot;" time="0">
     </testcase>
@@ -368,62 +368,62 @@
     <testcase classname="chohan returns 半 when seed returns an odd number like 1" name="chohan returns 半 when seed returns an odd number like 1" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2023-08-05T13:33:38" time="10.185" tests="37">
-    <testcase classname=" toBe" name=" toBe" time="0.008">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2023-08-05T14:37:28" time="10.311" tests="37">
+    <testcase classname=" toBe" name=" toBe" time="0.009">
     </testcase>
     <testcase classname=" toEqual" name=" toEqual" time="0.001">
     </testcase>
-    <testcase classname=" toStrictEqual" name=" toStrictEqual" time="0.001">
+    <testcase classname=" toStrictEqual" name=" toStrictEqual" time="0">
     </testcase>
     <testcase classname=" can1 and can2 are not the exact same instance" name=" can1 and can2 are not the exact same instance" time="0.001">
     </testcase>
-    <testcase classname=" can2 and can3 are the exact same instance" name=" can2 and can3 are the exact same instance" time="0">
+    <testcase classname=" can2 and can3 are the exact same instance" name=" can2 and can3 are the exact same instance" time="0.001">
     </testcase>
-    <testcase classname=" can1 and can2 have the same properties" name=" can1 and can2 have the same properties" time="0.001">
+    <testcase classname=" can1 and can2 have the same properties" name=" can1 and can2 have the same properties" time="0">
     </testcase>
-    <testcase classname=" can2 and can4 have the same properties" name=" can2 and can4 have the same properties" time="0">
+    <testcase classname=" can2 and can4 have the same properties" name=" can2 and can4 have the same properties" time="0.001">
     </testcase>
     <testcase classname=" can2 and can4 are the different class" name=" can2 and can4 are the different class" time="0">
     </testcase>
-    <testcase classname=" differences between toEqual and toStrictEqual" name=" differences between toEqual and toStrictEqual" time="0.016">
+    <testcase classname=" differences between toEqual and toStrictEqual" name=" differences between toEqual and toStrictEqual" time="0.004">
     </testcase>
     <testcase classname=" &quot;0&quot; should be Truthy" name=" &quot;0&quot; should be Truthy" time="0.001">
     </testcase>
-    <testcase classname=" 0 should be Falsy" name=" 0 should be Falsy" time="0">
+    <testcase classname=" 0 should be Falsy" name=" 0 should be Falsy" time="0.006">
     </testcase>
-    <testcase classname=" should be null" name=" should be null" time="0.001">
+    <testcase classname=" should be null" name=" should be null" time="0">
     </testcase>
     <testcase classname=" should be undefined" name=" should be undefined" time="0">
     </testcase>
-    <testcase classname=" should be null or undefined" name=" should be null or undefined" time="0.003">
+    <testcase classname=" should be null or undefined" name=" should be null or undefined" time="0.001">
     </testcase>
-    <testcase classname=" hoge return anything" name=" hoge return anything" time="0.004">
+    <testcase classname=" hoge return anything" name=" hoge return anything" time="0">
     </testcase>
-    <testcase classname=" 0.1 + 0.2 return 0.3" name=" 0.1 + 0.2 return 0.3" time="0.004">
+    <testcase classname=" 0.1 + 0.2 return 0.3" name=" 0.1 + 0.2 return 0.3" time="0">
     </testcase>
     <testcase classname=" 0.301 and 0.3 are different when numDigest is 3" name=" 0.301 and 0.3 are different when numDigest is 3" time="0">
     </testcase>
-    <testcase classname=" 0.1 + 0.2 is greater than 0.3" name=" 0.1 + 0.2 is greater than 0.3" time="0">
+    <testcase classname=" 0.1 + 0.2 is greater than 0.3" name=" 0.1 + 0.2 is greater than 0.3" time="0.001">
     </testcase>
     <testcase classname=" 0.1 + 0.2 is greater than 0.3 or 0.1 + 0.2 equals to 0.30000000000000004" name=" 0.1 + 0.2 is greater than 0.3 or 0.1 + 0.2 equals to 0.30000000000000004" time="0">
     </testcase>
     <testcase classname=" 0.1+0.2 is less than 0.4" name=" 0.1+0.2 is less than 0.4" time="0">
     </testcase>
-    <testcase classname=" 0.1 + 0.2 is less than 0.4 or 0.1 + 0.2 equals to 0.30000000000000004" name=" 0.1 + 0.2 is less than 0.4 or 0.1 + 0.2 equals to 0.30000000000000004" time="0.001">
+    <testcase classname=" 0.1 + 0.2 is less than 0.4 or 0.1 + 0.2 equals to 0.30000000000000004" name=" 0.1 + 0.2 is less than 0.4 or 0.1 + 0.2 equals to 0.30000000000000004" time="0">
     </testcase>
     <testcase classname=" contains 10.0.0.3 IP address" name=" contains 10.0.0.3 IP address" time="0">
     </testcase>
-    <testcase classname=" contain IP address between 10.0.0.0 and 10.0.0.99" name=" contain IP address between 10.0.0.0 and 10.0.0.99" time="0.003">
+    <testcase classname=" contain IP address between 10.0.0.0 and 10.0.0.99" name=" contain IP address between 10.0.0.0 and 10.0.0.99" time="0.032">
     </testcase>
-    <testcase classname=" contains Apple in fruitList" name=" contains Apple in fruitList" time="0">
+    <testcase classname=" contains Apple in fruitList" name=" contains Apple in fruitList" time="0.001">
     </testcase>
-    <testcase classname=" contains Apple and Orange in fruitList" name=" contains Apple and Orange in fruitList" time="0">
+    <testcase classname=" contains Apple and Orange in fruitList" name=" contains Apple and Orange in fruitList" time="0.003">
     </testcase>
-    <testcase classname=" contains Apple in itemList" name=" contains Apple in itemList" time="0">
+    <testcase classname=" contains Apple in itemList" name=" contains Apple in itemList" time="0.001">
     </testcase>
-    <testcase classname=" contains Apple and Orange in itemList" name=" contains Apple and Orange in itemList" time="0.001">
+    <testcase classname=" contains Apple and Orange in itemList" name=" contains Apple and Orange in itemList" time="0">
     </testcase>
-    <testcase classname=" build state should be Taka" name=" build state should be Taka" time="0.003">
+    <testcase classname=" build state should be Taka" name=" build state should be Taka" time="0">
     </testcase>
     <testcase classname=" actor should be Taka" name=" actor should be Taka" time="0">
     </testcase>
@@ -433,15 +433,15 @@
     </testcase>
     <testcase classname=" throw Error when the length of password is less than 6" name=" throw Error when the length of password is less than 6" time="0.012">
     </testcase>
-    <testcase classname=" return Lemon" name=" return Lemon" time="3.006">
+    <testcase classname=" return Lemon" name=" return Lemon" time="3.016">
     </testcase>
-    <testcase classname=" return lemon" name=" return lemon" time="1.002">
+    <testcase classname=" return lemon" name=" return lemon" time="1.01">
     </testcase>
     <testcase classname=" return lemon with async/await" name=" return lemon with async/await" time="1.001">
     </testcase>
-    <testcase classname=" failed to return lemon" name=" failed to return lemon" time="1.003">
+    <testcase classname=" failed to return lemon" name=" failed to return lemon" time="1.004">
     </testcase>
-    <testcase classname=" failed to return lemon" name=" failed to return lemon" time="1.001">
+    <testcase classname=" failed to return lemon" name=" failed to return lemon" time="1.003">
     </testcase>
   </testsuite>
 </testsuites>
