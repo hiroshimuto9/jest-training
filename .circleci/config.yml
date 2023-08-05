@@ -6,6 +6,9 @@ jobs: # ジョブの設定を追加
     steps: # Jobで実行されるステップ
       - checkout # Githubからソースコードをチェックアウトする
       - run:
+          name: Install node packages # 依存関係のインストール
+          command: npm install
+      - run:
           name: Run Test # UIとE2E以外のテストを実行
           command: npm test -- src/chapter2/getting_started_jest src/chapter2/assertion src/chapter2/group src/chapter2/mock
       - store_test_results: # テスト結果をアップロード

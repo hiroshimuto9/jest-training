@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="165" failures="0" errors="0" time="10.583">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2023-08-05T13:33:38" time="3.265" tests="1">
+    <testcase classname=" 1+2 equals 3" name=" 1+2 equals 3" time="0.009">
+    </testcase>
+  </testsuite>
+  <testsuite name="Math.random with spyOn" errors="0" failures="0" skipped="0" timestamp="2023-08-05T13:33:38" time="4.117" tests="2">
+    <testcase classname="Math.random with spyOn Math.random return 1" name="Math.random with spyOn Math.random return 1" time="0.008">
+    </testcase>
+    <testcase classname="Math.random with spyOn Math.random return under 1" name="Math.random with spyOn Math.random return under 1" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="#reset mocks with jest.fn" errors="0" failures="0" skipped="0" timestamp="2023-08-05T13:33:38" time="4.226" tests="3">
+    <testcase classname="#reset mocks with jest.fn jest.clearAllMocks" name="#reset mocks with jest.fn jest.clearAllMocks" time="0.008">
+    </testcase>
+    <testcase classname="#reset mocks with jest.fn jest.resetAllMocks" name="#reset mocks with jest.fn jest.resetAllMocks" time="0">
+    </testcase>
+    <testcase classname="#reset mocks with jest.fn jest.restoreAllMocks" name="#reset mocks with jest.fn jest.restoreAllMocks" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2023-08-05T13:33:38" time="4.276" tests="1">
+    <testcase classname=" should fetch all users" name=" should fetch all users" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="グループ名" errors="0" failures="0" skipped="100" timestamp="2023-08-05T13:33:38" time="4.314" tests="116">
+    <testcase classname="グループ名 test1" name="グループ名 test1" time="0.005">
+    </testcase>
+    <testcase classname="グループ名 test2" name="グループ名 test2" time="0">
+    </testcase>
+    <testcase classname="グループ名 test3" name="グループ名 test3" time="0">
+    </testcase>
+    <testcase classname="グループ名 入れ子グループ名 test4" name="グループ名 入れ子グループ名 test4" time="0">
+    </testcase>
+    <testcase classname="test eachの利用 .add(1, 1)" name="test eachの利用 .add(1, 1)" time="0.001">
+    </testcase>
+    <testcase classname="test eachの利用 .add(1, 2)" name="test eachの利用 .add(1, 2)" time="0">
+    </testcase>
+    <testcase classname="test eachの利用 .add(2, 1)" name="test eachの利用 .add(2, 1)" time="0">
+    </testcase>
+    <testcase classname="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 100" name="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 100" time="0">
+    </testcase>
+    <testcase classname="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 99" name="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 99" time="0">
+    </testcase>
+    <testcase classname="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 1" name="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 1" time="0.001">
+    </testcase>
+    <testcase classname="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 0.1" name="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 0.1" time="0">
+    </testcase>
+    <testcase classname="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 0" name="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to 0" time="0">
+    </testcase>
+    <testcase classname="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to -1" name="calculateSalesTax with Parameterized Test calculates the sales tax for a price equal to -1" time="0">
+    </testcase>
+    <testcase classname="before/after timing test group1" name="before/after timing test group1" time="0">
+    </testcase>
+    <testcase classname="before/after timing Scoped/Nested block test group2" name="before/after timing Scoped/Nested block test group2" time="0">
+    </testcase>
+    <testcase classname="before/after timing Scoped/Nested block test group2" name="before/after timing Scoped/Nested block test group2" time="0.001">
+    </testcase>
+    <testcase classname=" concurrent tests 0" name=" concurrent tests 0" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 1" name=" concurrent tests 1" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 2" name=" concurrent tests 2" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 3" name=" concurrent tests 3" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 4" name=" concurrent tests 4" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 5" name=" concurrent tests 5" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 6" name=" concurrent tests 6" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 7" name=" concurrent tests 7" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 8" name=" concurrent tests 8" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 9" name=" concurrent tests 9" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 10" name=" concurrent tests 10" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 11" name=" concurrent tests 11" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 12" name=" concurrent tests 12" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 13" name=" concurrent tests 13" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 14" name=" concurrent tests 14" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 15" name=" concurrent tests 15" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 16" name=" concurrent tests 16" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 17" name=" concurrent tests 17" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 18" name=" concurrent tests 18" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 19" name=" concurrent tests 19" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 20" name=" concurrent tests 20" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 21" name=" concurrent tests 21" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 22" name=" concurrent tests 22" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 23" name=" concurrent tests 23" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 24" name=" concurrent tests 24" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 25" name=" concurrent tests 25" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 26" name=" concurrent tests 26" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 27" name=" concurrent tests 27" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 28" name=" concurrent tests 28" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 29" name=" concurrent tests 29" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 30" name=" concurrent tests 30" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 31" name=" concurrent tests 31" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 32" name=" concurrent tests 32" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 33" name=" concurrent tests 33" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 34" name=" concurrent tests 34" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 35" name=" concurrent tests 35" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 36" name=" concurrent tests 36" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 37" name=" concurrent tests 37" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 38" name=" concurrent tests 38" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 39" name=" concurrent tests 39" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 40" name=" concurrent tests 40" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 41" name=" concurrent tests 41" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 42" name=" concurrent tests 42" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 43" name=" concurrent tests 43" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 44" name=" concurrent tests 44" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 45" name=" concurrent tests 45" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 46" name=" concurrent tests 46" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 47" name=" concurrent tests 47" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 48" name=" concurrent tests 48" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 49" name=" concurrent tests 49" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 50" name=" concurrent tests 50" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 51" name=" concurrent tests 51" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 52" name=" concurrent tests 52" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 53" name=" concurrent tests 53" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 54" name=" concurrent tests 54" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 55" name=" concurrent tests 55" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 56" name=" concurrent tests 56" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 57" name=" concurrent tests 57" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 58" name=" concurrent tests 58" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 59" name=" concurrent tests 59" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 60" name=" concurrent tests 60" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 61" name=" concurrent tests 61" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 62" name=" concurrent tests 62" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 63" name=" concurrent tests 63" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 64" name=" concurrent tests 64" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 65" name=" concurrent tests 65" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 66" name=" concurrent tests 66" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 67" name=" concurrent tests 67" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 68" name=" concurrent tests 68" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 69" name=" concurrent tests 69" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 70" name=" concurrent tests 70" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 71" name=" concurrent tests 71" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 72" name=" concurrent tests 72" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 73" name=" concurrent tests 73" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 74" name=" concurrent tests 74" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 75" name=" concurrent tests 75" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 76" name=" concurrent tests 76" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 77" name=" concurrent tests 77" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 78" name=" concurrent tests 78" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 79" name=" concurrent tests 79" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 80" name=" concurrent tests 80" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 81" name=" concurrent tests 81" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 82" name=" concurrent tests 82" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 83" name=" concurrent tests 83" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 84" name=" concurrent tests 84" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 85" name=" concurrent tests 85" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 86" name=" concurrent tests 86" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 87" name=" concurrent tests 87" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 88" name=" concurrent tests 88" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 89" name=" concurrent tests 89" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 90" name=" concurrent tests 90" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 91" name=" concurrent tests 91" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 92" name=" concurrent tests 92" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 93" name=" concurrent tests 93" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 94" name=" concurrent tests 94" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 95" name=" concurrent tests 95" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 96" name=" concurrent tests 96" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 97" name=" concurrent tests 97" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 98" name=" concurrent tests 98" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" concurrent tests 99" name=" concurrent tests 99" time="0">
+      <skipped/>
+    </testcase>
+  </testsuite>
+  <testsuite name="jest fn()" errors="0" failures="0" skipped="0" timestamp="2023-08-05T13:33:38" time="4.334" tests="5">
+    <testcase classname="jest fn() mock object specification" name="jest fn() mock object specification" time="0.005">
+    </testcase>
+    <testcase classname=" return &quot;Hello&quot;" name=" return &quot;Hello&quot;" time="0">
+    </testcase>
+    <testcase classname=" return &quot;Hello&quot; once then it returns &quot;Goodbye&quot;" name=" return &quot;Hello&quot; once then it returns &quot;Goodbye&quot;" time="0">
+    </testcase>
+    <testcase classname="chohan returns 丁 when seed returns an even number like 2" name="chohan returns 丁 when seed returns an even number like 2" time="0">
+    </testcase>
+    <testcase classname="chohan returns 半 when seed returns an odd number like 1" name="chohan returns 半 when seed returns an odd number like 1" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2023-08-05T13:33:38" time="10.185" tests="37">
+    <testcase classname=" toBe" name=" toBe" time="0.008">
+    </testcase>
+    <testcase classname=" toEqual" name=" toEqual" time="0.001">
+    </testcase>
+    <testcase classname=" toStrictEqual" name=" toStrictEqual" time="0.001">
+    </testcase>
+    <testcase classname=" can1 and can2 are not the exact same instance" name=" can1 and can2 are not the exact same instance" time="0.001">
+    </testcase>
+    <testcase classname=" can2 and can3 are the exact same instance" name=" can2 and can3 are the exact same instance" time="0">
+    </testcase>
+    <testcase classname=" can1 and can2 have the same properties" name=" can1 and can2 have the same properties" time="0.001">
+    </testcase>
+    <testcase classname=" can2 and can4 have the same properties" name=" can2 and can4 have the same properties" time="0">
+    </testcase>
+    <testcase classname=" can2 and can4 are the different class" name=" can2 and can4 are the different class" time="0">
+    </testcase>
+    <testcase classname=" differences between toEqual and toStrictEqual" name=" differences between toEqual and toStrictEqual" time="0.016">
+    </testcase>
+    <testcase classname=" &quot;0&quot; should be Truthy" name=" &quot;0&quot; should be Truthy" time="0.001">
+    </testcase>
+    <testcase classname=" 0 should be Falsy" name=" 0 should be Falsy" time="0">
+    </testcase>
+    <testcase classname=" should be null" name=" should be null" time="0.001">
+    </testcase>
+    <testcase classname=" should be undefined" name=" should be undefined" time="0">
+    </testcase>
+    <testcase classname=" should be null or undefined" name=" should be null or undefined" time="0.003">
+    </testcase>
+    <testcase classname=" hoge return anything" name=" hoge return anything" time="0.004">
+    </testcase>
+    <testcase classname=" 0.1 + 0.2 return 0.3" name=" 0.1 + 0.2 return 0.3" time="0.004">
+    </testcase>
+    <testcase classname=" 0.301 and 0.3 are different when numDigest is 3" name=" 0.301 and 0.3 are different when numDigest is 3" time="0">
+    </testcase>
+    <testcase classname=" 0.1 + 0.2 is greater than 0.3" name=" 0.1 + 0.2 is greater than 0.3" time="0">
+    </testcase>
+    <testcase classname=" 0.1 + 0.2 is greater than 0.3 or 0.1 + 0.2 equals to 0.30000000000000004" name=" 0.1 + 0.2 is greater than 0.3 or 0.1 + 0.2 equals to 0.30000000000000004" time="0">
+    </testcase>
+    <testcase classname=" 0.1+0.2 is less than 0.4" name=" 0.1+0.2 is less than 0.4" time="0">
+    </testcase>
+    <testcase classname=" 0.1 + 0.2 is less than 0.4 or 0.1 + 0.2 equals to 0.30000000000000004" name=" 0.1 + 0.2 is less than 0.4 or 0.1 + 0.2 equals to 0.30000000000000004" time="0.001">
+    </testcase>
+    <testcase classname=" contains 10.0.0.3 IP address" name=" contains 10.0.0.3 IP address" time="0">
+    </testcase>
+    <testcase classname=" contain IP address between 10.0.0.0 and 10.0.0.99" name=" contain IP address between 10.0.0.0 and 10.0.0.99" time="0.003">
+    </testcase>
+    <testcase classname=" contains Apple in fruitList" name=" contains Apple in fruitList" time="0">
+    </testcase>
+    <testcase classname=" contains Apple and Orange in fruitList" name=" contains Apple and Orange in fruitList" time="0">
+    </testcase>
+    <testcase classname=" contains Apple in itemList" name=" contains Apple in itemList" time="0">
+    </testcase>
+    <testcase classname=" contains Apple and Orange in itemList" name=" contains Apple and Orange in itemList" time="0.001">
+    </testcase>
+    <testcase classname=" build state should be Taka" name=" build state should be Taka" time="0.003">
+    </testcase>
+    <testcase classname=" actor should be Taka" name=" actor should be Taka" time="0">
+    </testcase>
+    <testcase classname=" triggered by the scheduled pipeline" name=" triggered by the scheduled pipeline" time="0.001">
+    </testcase>
+    <testcase classname=" creates a new user with a 6-character password" name=" creates a new user with a 6-character password" time="0">
+    </testcase>
+    <testcase classname=" throw Error when the length of password is less than 6" name=" throw Error when the length of password is less than 6" time="0.012">
+    </testcase>
+    <testcase classname=" return Lemon" name=" return Lemon" time="3.006">
+    </testcase>
+    <testcase classname=" return lemon" name=" return lemon" time="1.002">
+    </testcase>
+    <testcase classname=" return lemon with async/await" name=" return lemon with async/await" time="1.001">
+    </testcase>
+    <testcase classname=" failed to return lemon" name=" failed to return lemon" time="1.003">
+    </testcase>
+    <testcase classname=" failed to return lemon" name=" failed to return lemon" time="1.001">
+    </testcase>
+  </testsuite>
+</testsuites>
