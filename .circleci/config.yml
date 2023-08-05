@@ -3,14 +3,16 @@ jobs: # ジョブの設定を追加
   test:
     docker: # エグゼキューター
       - image: cimg/node:18.14.0
+    parallelism: 2
     steps: # Jobで実行されるステップ
       - checkout # Githubからソースコードをチェックアウトする
       - run:
           name: Install node packages # 依存関係のインストール
           command: npm install
       - run:
-          name: Run Test # UIとE2E以外のテストを実行
-          command: npm test -- src/chapter2/getting_started_jest src/chapter2/assertion src/chapter2/group src/chapter2/mock
+          name: Run Test # CircleCI CLIでテストを分割
+          command: TEST_FILES=$(npx jest --listTests src/chapter2/getting_started_jest src/chapter2/assertion src/chapter2/group src/chapter2/mock | circleci tests split) 
+            echo $TEST_FILES npm test -- $TEST_FILES
       - store_test_results: # テスト結果をアップロード
           path: reports/jest
 workflows: # ワークフローの設定を追加
