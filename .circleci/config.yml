@@ -5,6 +5,11 @@ jobs: # ジョブの設定を追加
       - image: cimg/node:18.14.0
     steps: # Jobで実行されるステップ
       - checkout # Githubからソースコードをチェックアウトする
+      - run:
+          name: Run Test # UIとE2E以外のテストを実行
+          command: npm test -- src/chapter2/getting_started_jest src/chapter2/assertion src/chapter2/group src/chapter2/mock
+      - store_test_results: # テスト結果をアップロード
+          path: reports/jest
 workflows: # ワークフローの設定を追加
   test:
     jobs:

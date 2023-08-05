@@ -3,4 +3,8 @@ export default {
   moduleNameMapper: {
     "\\.(css|less|scss)$": "identity-obj-proxy"
   },
+  reporters: [
+    "default",
+    ['jest-junit', { outputDirectory: 'reports/jest', outputName: 'jest-report.xml' }],
+  ]
 }
