@@ -20,6 +20,9 @@ jobs: # ジョブの設定を追加
           name: Run Test # CircleCI CLIでテストを分割
           command: TEST_FILES=$(npx jest --listTests src/chapter2/getting_started_jest src/chapter2/assertion src/chapter2/group src/chapter2/mock | circleci tests split) 
             echo $TEST_FILES npm test -- $TEST_FILES
+      - run:
+          name: Upload Storybook to Chromatic # ChromaticへStorybookをアップロード
+          command: npm run chromatic
       - store_test_results: # テスト結果をアップロード
           path: reports/jest
       - store_artifacts: # カバレッジをアップロード

@@ -8,7 +8,7 @@
     "test": "jest",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic"
+    "chromatic": "chromatic --exit-once-uploaded --exit-zero-on-changes"
   },
   "keywords": [],
   "author": "",
