@@ -4,13 +4,16 @@ button {
   border-radius: 3em;
   cursor: pointer;
   display: inline-block;
-  line-height: 1; font-size: 14px; padding: 11px 20px;
+  line-height: 1;
+  font-size: 15px;
+  padding: 21px 30px;
 }
 .primary {
-color: white; background-color: #1ea7fd;
+  color: white;
+  background-color: #1ea7fd;
 }
 .secondary {
-color: #333;
-background-color: transparent;
-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 }
