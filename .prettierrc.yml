@@ -1,0 +1,4 @@
+trailingComma: all # 配列等で末尾にカンマを追加す
+semi: false # セミコロン(;)を利用しない
+singleQuote: true # シングルクォーテーションを利用する
+arrowParens: avoid # アロー関数(() => {})で引数を囲む括弧((): Parentheses)の利用を強制しない
