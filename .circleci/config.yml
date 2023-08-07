@@ -17,6 +17,9 @@ jobs: # ジョブの設定を追加
             - "./node_modules"
           key: node-v1-{{ checksum "package-lock.json" }}
       - run:
+          name: Run lint and format # lint and format ステップを追加
+          command: npm run lint && npm run format
+      - run:
           name: Run Test # CircleCI CLIでテストを分割
           command: TEST_FILES=$(npx jest --listTests src/chapter2/getting_started_jest src/chapter2/assertion src/chapter2/group src/chapter2/mock | circleci tests split) 
             echo $TEST_FILES npm test -- $TEST_FILES
