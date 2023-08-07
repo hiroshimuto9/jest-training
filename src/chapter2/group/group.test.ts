@@ -22,15 +22,15 @@ describe('test eachの利用', () => {
     { a: 1, b: 1, expected: 2 },
     { a: 1, b: 2, expected: 3 },
     { a: 2, b: 1, expected: 3 },
-  ])
-  ('.add($a, $b)', ({a, b, expected}) => {
+  ])('.add($a, $b)', ({ a, b, expected }) => {
     expect(a + b).toBe(expected)
   })
 })
 
 // 入力値と期待値だけが異なるテストケースは以下のようにまとめることで記述が単純になる
 // 消費税を計算。税率を10%に固定。
-const calculateSalesTax = (price: number) => price > 0 ? Math.floor((price / 100) * 10) : 0
+const calculateSalesTax = (price: number) =>
+  price > 0 ? Math.floor((price / 100) * 10) : 0
 
 describe('calculateSalesTax with Parameterized Test', () => {
   test.each([
@@ -40,9 +40,12 @@ describe('calculateSalesTax with Parameterized Test', () => {
     { price: 0.1, expected: 0 },
     { price: 0, expected: 0 },
     { price: -1, expected: 0 },
-  ])('calculates the sales tax for a price equal to $price', ({ price, expected}) => {
-    expect(calculateSalesTax(price)).toBe(expected)
-  })
+  ])(
+    'calculates the sales tax for a price equal to $price',
+    ({ price, expected }) => {
+      expect(calculateSalesTax(price)).toBe(expected)
+    },
+  )
 })
 
 // describeを複数利用した入れ子構造での前後処理が実行されるタイミングの確認
@@ -70,14 +73,12 @@ describe('before/after timing', () => {
 })
 
 // 1秒後に`lemon`文字列を返却
-const fetchData = () => new Promise(resolve => setTimeout(resolve, 1000, 'lemon'))
+const fetchData = () =>
+  new Promise(resolve => setTimeout(resolve, 1000, 'lemon'))
 // fetchData関数を100回実行するテスト // skipを追加
 test.concurrent.skip.each(
-  Array.from(new Array(100).keys()).map(n => 
-    ({ n,expected: 'lemon', })
-  ),)
-  ('concurrent tests $n', async ({ n, expected }) => {
-    console.log(n)
-    await expect(fetchData()).resolves.toBe(expected)
-  }
-)
+  Array.from(new Array(100).keys()).map(n => ({ n, expected: 'lemon' })),
+)('concurrent tests $n', async ({ n, expected }) => {
+  console.log(n)
+  await expect(fetchData()).resolves.toBe(expected)
+})

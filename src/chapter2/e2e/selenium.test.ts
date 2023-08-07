@@ -1,4 +1,11 @@
-import { WebDriver, Builder, By, Key, until, Capabilities } from 'selenium-webdriver'
+import {
+  WebDriver,
+  Builder,
+  By,
+  Key,
+  until,
+  Capabilities,
+} from 'selenium-webdriver'
 
 jest.setTimeout(30000) // タイムアウトを30秒に延長
 
@@ -6,7 +13,7 @@ describe('e2e test with selenium and chromeDriver', () => {
   let chromeDriver: WebDriver
 
   // WebDriver、Chrome ブラウザをセットアップ
-  beforeAll(async() => {
+  beforeAll(async () => {
     const chromeCapabilities = Capabilities.chrome()
     chromeCapabilities.set('goog:chromeOptions', {
       args: [
@@ -18,7 +25,9 @@ describe('e2e test with selenium and chromeDriver', () => {
       ],
     })
     // Chromeを起動しWebDriverのインスタンスを取得
-    chromeDriver = await new Builder().withCapabilities(chromeCapabilities).build()
+    chromeDriver = await new Builder()
+      .withCapabilities(chromeCapabilities)
+      .build()
   })
 
   // Chrome を終了する設定
@@ -30,9 +39,14 @@ describe('e2e test with selenium and chromeDriver', () => {
     // google.comにアクセス
     await chromeDriver.get('https://www.google.com/ncr')
     // 検索ボックスの要素を取得し、webdriver、エンターキーを入力
-    await chromeDriver.findElement(By.name('q')).sendKeys('webdriver', Key.RETURN)
+    await chromeDriver
+      .findElement(By.name('q'))
+      .sendKeys('webdriver', Key.RETURN)
     // ページのタイトルが`webdriver - Google Search`であることを確認
-    const results = await chromeDriver.wait(until.titleIs('webdriver - Google Search'), 10000)
+    const results = await chromeDriver.wait(
+      until.titleIs('webdriver - Google Search'),
+      10000,
+    )
     expect(results).toBe(true)
   })
 })

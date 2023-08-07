@@ -1,6 +1,6 @@
 /**
-* @jest-environment jsdom
-*/
+ * @jest-environment jsdom
+ */
 import renderer from 'react-test-renderer'
 import { render, fireEvent } from '@testing-library/react'
 import { Button } from './Button'
@@ -9,7 +9,7 @@ describe('Button', () => {
   // react-test-rendererを利用したスナップショットテスト
   it('renders correctly with react-test-renderer', () => {
     const button = renderer.create(<Button />)
-    expect(button.toJSON()).toMatchSnapshot();
+    expect(button.toJSON()).toMatchSnapshot()
   })
 
   // React Testing Libraryを利用した、動きのあるコンポーネントのテスト
