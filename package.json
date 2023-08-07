@@ -10,7 +10,7 @@
     "build-storybook": "storybook build",
     "chromatic": "chromatic --exit-once-uploaded --exit-zero-on-changes",
     "lint": "eslint src",
-    "format": "prettier --list-different src",
+    "format": "prettier --write src",
     "lint-staged": "lint-staged --allow-empty",
     "prepare": "husky install"
   },
